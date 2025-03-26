@@ -7,6 +7,7 @@ import com.flutterjunction.firstjobapp.review.Review;
 import com.flutterjunction.firstjobapp.review.ReviewRepository;
 import com.flutterjunction.firstjobapp.review.ReviewService;
 import jakarta.transaction.Transactional;
+import org.apache.commons.logging.Log;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -67,6 +68,7 @@ public class ReviewServiceImpl implements ReviewService {
                 reviewRepository.deleteById(reviewId);
                 return true;
             } else {
+
                 return false;
             }
 
